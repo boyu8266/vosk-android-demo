@@ -122,7 +122,7 @@ public class VoskActivity extends Activity implements
 
     @Override
     public void onResult(String hypothesis) {
-        resultView.append(hypothesis + "\n");
+        resultView.setText(hypothesis);
     }
 
     @Override
@@ -136,7 +136,7 @@ public class VoskActivity extends Activity implements
 
     @Override
     public void onPartialResult(String hypothesis) {
-        resultView.append(hypothesis + "\n");
+        // resultView.append(hypothesis + "\n");
     }
 
     @Override
