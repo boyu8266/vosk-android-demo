@@ -15,16 +15,16 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: Set up JDK 8
+    - name: Set up JDK 17
       uses: actions/setup-java@v4
       with:
-        java-version: '8'
+        java-version: '17'
         distribution: 'temurin'
 
     - name: Setup Android SDK
       uses: android-actions/setup-android@v3
       with:
-        cmdline-tools-version: 9123335
+        cmdline-tools-version: 10406996
 
     - name: Grant execute permission for Gradle wrapper
       run: chmod +x ./gradlew
